@@ -1,0 +1,40 @@
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F8E7F6;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.counter-value {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    /* animation: popIn 0.5s ease-in-out; */
+}
+
+.counter-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    /* background-color: black; */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    transition: all 0.3s ease;
+}

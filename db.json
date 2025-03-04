@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "FirstName": "Dhruvins",
+      "LastName": "Sathvara",
+      "email": "dhruvin@gmail.com",
+      "pwd": "dask",
+      "id": "c2d1"
+    },
+    {
+      "id": "358d",
+      "FirstName": "Dhruvin",
+      "LastName": "Sathvara",
+      "email": "sathvaradhruvin05@gmail.com",
+      "pwd": "dsa"
+    }
+  ]
+}
