@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { auth, db } from './Register';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Forms = () => {
     const { register, handleSubmit } = useForm();
@@ -17,17 +17,16 @@ const Forms = () => {
             const user = userCredential.user;
             console.log("User created:", user.uid);
 
-            // Step 2: Store user data in Firestore
+            // Step 2: Store userdata in Firestore
             if (user) {
                 await setDoc(doc(db, "users", user.uid), {
                     email: user.email,
                     firstName: firstName,
-                    lastName: lastName,
+                    lastName: lastName
                 });
                 console.log("User data stored successfully in Firestore!")
-                navigate('/login')
+                navigate('/login');
             }
-
         } catch (error) {
             console.error("Error creating user:", error.message);
         }
